@@ -1,0 +1,17 @@
+/*
+author: The Useful Walrus
+source: https://discord.com/channels/686053708261228577/702656734631821413/1144209029464342538
+*/
+
+.markdown-preview-view .inline-title {
+    margin-bottom: 0px;
+}
+
+/* remove Properties view top padding */
+.markdown-preview-view .metadata-container {
+    padding: 0px;
+}
+
+.markdown-preview-view .metadata-properties-title {
+     display: none;
+}

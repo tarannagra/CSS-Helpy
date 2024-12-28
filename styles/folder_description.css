@@ -1,0 +1,131 @@
+/*
+author: Corellan
+source: https://github.com/r-u-s-h-i-k-e-s-h/Obsidian-CSS-Snippets/blob/Collection/Snippets/File%20explorer%20styling%20-%20Folder%20description.md
+*/
+
+/* ╔════════════════════════════════════════════════════════════════════════════════════════════════════════[─]═[□]═[×]═╗ */
+/* ║ Obsidian Add-On                                                                                                    ║ */
+/* ╠══════════════════════════╦═════════════════════════════════════════════════════════════════════════════════════════╣ */
+/* ║ Name:                    ║ CreArts Folder-Description                                                              ║ */
+/* ║ Version:                 ║ 1.0.0                                                                                   ║ */
+/* ║ Author:                  ║ Corellan                                                                                ║ */
+/* ║ License:                 ║ MIT                                                                                     ║ */
+/* ╚══════════════════════════╩═════════════════════════════════════════════════════════════════════════════════════════╝ */
+
+/* ╔══════════════════════════╦═════════════════════════════════════════════════════════════════════════════[─]═[□]═[×]═╗ */
+/* ║ Custom CSS               ║ Vars                                                                                    ║ */
+/* ╚══════════════════════════╩═════════════════════════════════════════════════════════════════════════════════════════╝ */
+
+:root {
+  --folder-comments-height: 30px;
+}
+
+/* ╔══════════════════════════╦═════════════════════════════════════════════════════════════════════════════[─]═[□]═[×]═╗ */
+/* ║ Custom CSS               ║ General                                                                                 ║ */
+/* ╚══════════════════════════╩═════════════════════════════════════════════════════════════════════════════════════════╝ */
+
+.tree-item-inner::after {
+  position: absolute;
+  font-size: 10px;
+  bottom: 4px;
+  left: 25px;
+  opacity: 40%;
+}
+
+.tree-item .nav-folder:not(.is-collapsed) .tree-item-inner::after {
+  color: var(--custom-color-primary);
+  opacity: 100;
+}
+
+/* ╔══════════════════════════╦═════════════════════════════════════════════════════════════════════════════[─]═[□]═[×]═╗ */
+/* ║ Custom CSS               ║ Plugins                                                                                    ║ */
+/* ╚══════════════════════════╩═════════════════════════════════════════════════════════════════════════════════════════╝ */
+
+.nav-folder-title[data-count]::after {
+  align-self: start;
+}
+
+/* ╔══════════════════════════╦═════════════════════════════════════════════════════════════════════════════[─]═[□]═[×]═╗ */
+/* ║ Custom CSS               ║ Pseudo                                                                                  ║ */
+/* ╚══════════════════════════╩═════════════════════════════════════════════════════════════════════════════════════════╝ */
+
+/* Images */
+[data-path="0 - Attachments"] .tree-item-inner {
+  height: var(--folder-comments-height);
+}
+
+[data-path="0 - Attachments"] .tree-item-inner::after {
+  content: "Images on each file";
+}
+
+/* Main */
+[data-path="1 - Main"] .tree-item-inner {
+  height: var(--folder-comments-height);
+}
+
+[data-path="1 - Main"] .tree-item-inner::after {
+  content: "My Personal Notes";
+}
+
+/* University */
+[data-path="2 - University"] .tree-item-inner {
+  height: var(--folder-comments-height);
+}
+
+[data-path="2 - University"] .tree-item-inner::after {
+  content: "University Work";
+}
+
+/* Personal */
+[data-path="4 - Personal"] .tree-item-inner {
+  height: var(--folder-comments-height);
+}
+
+[data-path="4 - Personal"] .tree-item-inner::after {
+  content: "Personal Notes w/ Calendar";
+}
+
+/* Web Clipping */
+[data-path="96 - Web Clippings"] .tree-item-inner {
+  height: var(--folder-comments-height);
+}
+
+[data-path="96 - Web Clippings"] .tree-item-inner::after {
+  content: "Content Saved via Web Clipper";
+}
+
+/* Excalidraw */
+[data-path="97 - Excalidraw"] .tree-item-inner {
+  height: var(--folder-comments-height);
+}
+
+[data-path="97 - Excalidraw"] .tree-item-inner::after {
+  content: "Drawings Made via Excalidraw";
+}
+
+/* Templates */
+[data-path="98 - Templates"] .tree-item-inner {
+  height: var(--folder-comments-height);
+}
+
+[data-path="98 - Templates"] .tree-item-inner::after {
+  content: "Custom Templates";
+}
+
+/* Glossary */
+[data-path="99 - Glossary"] .tree-item-inner {
+  height: var(--folder-comments-height);
+}
+
+[data-path="99 - Glossary"] .tree-item-inner::after {
+  content: "Definitions via Glossary";
+}
+
+/* MOCs */
+[data-path="100 - MOCs"] .tree-item-inner {
+  height: var(--folder-comments-height);
+}
+
+[data-path="100 - MOCs"] .tree-item-inner::after {
+  content: "Maps Of Content";
+}
